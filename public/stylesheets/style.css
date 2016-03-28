@@ -1,0 +1,43 @@
+
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header-colors{
+  background-color: black;
+  color : white;
+}
+
+.float-right{
+  float:right;
+}
+
+.padding-all-10{
+  padding : 10px;
+}
+
+.font-size-30{
+  font-size: 30px;
+}
+
+.padding-left-40{
+  padding-left: 40px;
+}
+
+.padding-right-40{
+  padding-right: 40px;
+}
+
+#tagsInput {
+    border-color: #ccc;
+    border-color: rgba(82,168,236,.8);
+    outline: 0;
+    outline: thin dotted\9;
+    -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+}

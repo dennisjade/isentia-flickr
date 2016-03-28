@@ -1,0 +1,12 @@
+// Columns are always 50% wide, on mobile and desktop
+.row.header-colors
+  .col-xs-6.padding-all-10.padding-left-40
+    span.font-size-0
+      | flickr
+  .col-xs-6.padding-all-10.padding-right-40
+    form.form-inline.float-right
+      .form-group
+        label.sr-only(for='tags') tags &nbsp;
+        input#tagsInput.form-control(type='input', placeholder='tags')
+        i.glyphicon.glyphicon-user.form-control-feedback
+

@@ -1,0 +1,25 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/dennisjade/isentia-flickr",
+  "authors": [
+    "dennisjade <dennisjade@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2",
+    "angular": "^1.5.3"
+  }
+}
