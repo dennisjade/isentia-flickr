@@ -2,4 +2,10 @@ extends layout
 
 block content
   include header
+
+  .photoContainer(elem-ready="")
+    #photos.clearfix
+      .photo(ng-repeat='photo in photos.items')
+        img(ng-src='{{ photo.media.m }}')
+
   include footer
