@@ -3,6 +3,7 @@ extends layout
 block content
   include header
 
+  img#spinner.center-block.hidden(src="images/loading_spinner.gif")
   .photoContainer(elem-ready="")
     #photos.clearfix
       .photo(ng-repeat='photo in photos.items')

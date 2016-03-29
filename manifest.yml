@@ -1,6 +1,6 @@
 ---
 # Default manifest file
 applications:
-- command: npm start
+- command: node bin/www
   instances: 1
   memory: 1G

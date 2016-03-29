@@ -9,6 +9,18 @@
 
 (function() {
 
+
+  enabledDisableSpinner = function(bool) {
+    if (bool){
+      $("#spinner").removeClass('hidden')
+      $(".photoContainer").addClass('hidden')
+    }else{
+      $("#spinner").addClass('hidden')
+      $(".photoContainer").removeClass('hidden')
+    }
+
+  }
+
   angular.module('flickrApp', ['ngResource'])
 
   .factory('Flickr', function($resource, $q) {
@@ -18,11 +30,15 @@
     return {
       search: function(query) {
         var q = $q.defer();
+        enabledDisableSpinner(true)
+
         photosPublic.load({
           tags: query
         }, function(resp) {
+          enabledDisableSpinner(false)
           q.resolve(resp);
         }, function(err) {
+          enabledDisableSpinner(false)
           q.reject(err);
         })
         
