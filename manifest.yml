@@ -1,0 +1,6 @@
+---
+# Default manifest file
+applications:
+- command: npm start
+  instances: 1
+  memory: 1G
