@@ -41,3 +41,23 @@ a {
     -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
     box-shadow: 0 0 8px rgba(82,168,236,.6);
 }
+
+.photo {
+  width: 100px;
+  height: 100px;
+  margin: 1px;
+  float: left;
+  overflow: hidden;
+}
+
+.photo img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  max-height: 150%;
+}
+
+.float-right{
+  float: right;
+  padding-right: 10px;
+}
